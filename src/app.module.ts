@@ -4,6 +4,7 @@ import { AppController } from './app.controller.js';
 import { AppService } from './app.service.js';
 
 import { AlunosModule } from './alunos/alunos.module.js';
+import { ProdutosModule } from './produtos/produtos.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -18,6 +19,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
       serviceId: 'escola-api',
     }),
     AlunosModule,
+    ProdutosModule,
   ],
   controllers: [AppController],
   providers: [AppService],
